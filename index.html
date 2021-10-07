@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+<style>
+body{
+min-height: 98%;
+background: #eee;
+}
+.container{
+margin: 4% auto;
+width: 200px;
+height: 140px;
+position: relative;
+perspective: 1000px;
+}
+#carousel{
+width: 100%;
+height: 100%;
+position: absolute;
+transform-style: preserve-3d;
+animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+animation-play-state: paused;
+}
+#carousel figure{
+display: block;
+position: absolute;
+left: 10px;
+top: 30px;
+background: black;
+border: solid 5px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(200px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(200px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(200px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(200px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(200px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(200px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(200px);}
+#carousel figure:nth-child(8) {transform: rotateY(280deg) translateZ(200px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(200px);}
+figure img{
+-webkit-filter: grayscale(1);
+width: 80px;
+height: 80px;
+transition: all .5s ease;
+}
+figure img:hover{
+-webkit-filter: grayscale(0);
+transform: scale(1.2,1.2);
+}
+@keyframes rotation{
+from{
+transform: rotateY(0deg);
+}to{
+transform: rotateY(360deg);
+}}
+#main,#plc{
+display: grid;
+grid-template-rows: repeat(5, 1fr);
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 1rem;
+justify-items: center;
+}
+#main img{
+border-radius: 20px;
+box-shadow: 0 0 26px rgba(0, 0, 0, 0.3);
+height: 100px;
+width: 100px;
+}
+#header{
+background: #21183c;
+border-bottom: solid #f1f1f1 1px;
+color: white;
+display: block;
+font-size: 15px;
+padding: 2px 0px;;
+position: fixed;
+top: 0;
+width: 100%
+}
+#l, #r{
+background-image: radial-gradient(mintcream 0%, lightgray 100%);
+border-radius: 5px;
+color: #21183c;
+font-size: 9px;
+margin: auto 5px;
+padding: 5px;
+text-align: center;
+width: 20px;
+}
+#r{
+float: right;
+}
+#t{
+margin-left: 25%;
+}
+#tgl{
+width: auto;
+height: 0;
+border-left: 50vw solid #21183c;
+border-right: 50vw solid #21183c;
+border-top: 80px solid #eee;
+}
+#footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(8px + 2vmin);
+color: #f3ebff;
+background: #21183c; 
+margin-top: 5px;
+}
+h2{
+font-size: 30px;
+}
+#plc{
+border: solid 1px #eee;
+color: #eee;
+padding: 3px;
+text-align: center;
+width: 80%;
+}
+#bdr{
+border-bottom: 3px solid #ddd;
+margin: 3px;
+}
+#cpy{
+border-top: 10px solid #eee;
+margin-top: 5px;
+text-align: center;
+width: 100%;
+}
+#dc{
+background: #21183c;
+border-radius: 20px;
+color: white;
+display: block;
+margin: 20px auto;
+padding: 5px;
+text-align: center;
+width: 95%;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<b id="l" class="fa fa-female"></b>
+<b id="t">Zishy Call Girls</b>
+<b id="r" class="fas fa-hands-helping"></b>
+</div>
+<div class="container">
+<div id="carousel">
+<figure><img src="img/3.jpg"></figure>
+<figure><img src="img/7.jpg"></figure>
+<figure><img src="img/9.jpg"></figure>
+<figure><img src="img/18.jpg"></figure>
+<figure><img src="img/20.jpg"></figure>
+</div></div>
+<div id="bdr"></div>
+<div id="dc">
+<h2>Getting Bored?</h2>
+<b>
+<br>
+DON'T WORRY WE GLAD TO ASSIST YOU!
+<br><br>
+You are Watching Zishy to meet Passionate and High Class call girls, at your budget range.
+<br><br>
+If you are looking for some other hot girls and want to grab some fun, then do not need to go out of this website just hit the Hand Shake button above to get in touch with us for booking info and so on.
+</b>
+</div>
+<div id="bdr"></div>
+<div id="main">
+<img src="img/1.jpg">
+<img src="img/2.jpg">
+<img src="img/4.jpg">
+<img src="img/5.jpg">
+<img src="img/6.jpg">
+<img src="img/8.jpg">
+<img src="img/10.jpg">
+<img src="img/11.jpg">
+<img src="img/12.jpg">
+<img src="img/13.jpg">
+<img src="img/14.jpg">
+<img src="img/15.jpg">
+<img src="img/16.jpg">
+<img src="img/17.jpg">
+<img src="img/19.jpg">
+</div>
+<div id="footer">
+<div id="tgl"></div>
+<h2>PLACES</h2>
+<div id="plc">
+<i>Delhi</i>
+<i>Mumbai</i>
+<i>Kolkata</i>
+<i>Himachal Pradesh</i>
+<i>Punjab</i>
+<i>Haryana</i>
+<i>Chandigarh</i>
+<i>Chennai</i>
+<i>Goa</i>
+<i>Lucknow</i>
+<i>Hydrabad</i>
+<i>Rajasthan</i>
+<i>Madhya pradesh</i>
+<i>Gujrat</i>
+<i>Telangna</i>
+</div>
+<b id="cpy">© 2021, All Rights Reserved!</b>
+</div>
+</body>
+</html>
