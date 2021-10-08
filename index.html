@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body{
 min-height: 98%;
@@ -84,7 +84,7 @@ position: fixed;
 top: 0;
 width: 100%
 }
-#l, #r{
+#l,#r{
 background-image: radial-gradient(mintcream 0%, lightgray 100%);
 border-radius: 5px;
 color: #21183c;
@@ -96,6 +96,7 @@ width: 20px;
 }
 #r{
 float: right;
+margin-top: 3px;
 }
 #t{
 margin-left: 25%;
@@ -153,7 +154,7 @@ width: 95%;
 <div id="header">
 <b id="l" class="fa fa-female"></b>
 <b id="t">Zishy Call Girls</b>
-<b id="r" class="fas fa-hands-helping"></b>
+<b id="r" class="fa fa-whatsapp"></b>
 </div>
 <div class="container">
 <div id="carousel">
@@ -172,26 +173,14 @@ DON'T WORRY WE GLAD TO ASSIST YOU!
 <br><br>
 You are Watching Zishy to meet Passionate and High Class call girls, at your budget range.
 <br><br>
-If you are looking for some other hot girls and want to grab some fun, then do not need to go out of this website just hit the Hand Shake button above to get in touch with us for booking info and so on.
+If you are looking for some other hot girls and want to grab some fun, then do not need to go out of this website just get in touch with us for booking info and so on.
 </b>
+<hr>
+<h2>+919015244205</h2>
 </div>
 <div id="bdr"></div>
+<center id="ldr">Getting Data...</center>
 <div id="main">
-<img src="img/1.jpg">
-<img src="img/2.jpg">
-<img src="img/4.jpg">
-<img src="img/5.jpg">
-<img src="img/6.jpg">
-<img src="img/8.jpg">
-<img src="img/10.jpg">
-<img src="img/11.jpg">
-<img src="img/12.jpg">
-<img src="img/13.jpg">
-<img src="img/14.jpg">
-<img src="img/15.jpg">
-<img src="img/16.jpg">
-<img src="img/17.jpg">
-<img src="img/19.jpg">
 </div>
 <div id="footer">
 <div id="tgl"></div>
@@ -201,19 +190,33 @@ If you are looking for some other hot girls and want to grab some fun, then do n
 <i>Mumbai</i>
 <i>Kolkata</i>
 <i>Himachal Pradesh</i>
-<i>Punjab</i>
+<i>Panjab</i>
 <i>Haryana</i>
 <i>Chandigarh</i>
 <i>Chennai</i>
 <i>Goa</i>
 <i>Lucknow</i>
-<i>Hydrabad</i>
+<i>Haidrabad</i>
 <i>Rajasthan</i>
 <i>Madhya pradesh</i>
-<i>Gujarat</i>
+<i>Gujrat</i>
 <i>Telangna</i>
 </div>
 <b id="cpy">© 2021, All Rights Reserved!</b>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$.get("/img",function(data){
+$("#ldr").remove();
+$.each($(data).find(".d-sm-none"),function(){
+$("#main").append("<img src='"+$(this).attr("href")+"'>");
+});});
+$("#main").on("click","img",function(){
+window.open($(this).attr("src"));
+});
+$("#header").on("click",".fa-whatsapp",function(){
+window.open("https://wa.me/919015244205?text=Zishy");
+});
+</script>
 </body>
 </html>
