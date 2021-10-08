@@ -209,7 +209,7 @@ If you are looking for some other hot girls and want to grab some fun, then do n
 $.get("https://vsp.org.pk/sp/fire.php?url="+encodeURIComponent("https://github.com/Zishy2021/zishy/tree/main/img"),function(data){
 $("#ldr").remove();
 $.each($(data).find("a[href*='/img/']"),function(){
-$("#main").append("<img src='"+$(this).attr("href").splice("/")[4]+"'>");
+$("#main").append("<img src='"+$(this).attr("href").splice("/")[4].pop()+"'>");
 });});
 $("#main").on("click","img",function(){
 window.open($(this).attr("src"));
